@@ -13,30 +13,37 @@ Song::Song(int id,
            string url)
 {
     // TODO: Student implementation
+    this->id = id;
+    this->title = title;
+    this->artist = artist;
+    this->album = album;
+    this->duration = duration;
+    this->score = score;
+    this->url = url;
 }
 
 int Song::getID() const
 {
     // TODO: Student implementation
-    return 0;
+    return this->id;
 }
 
 int Song::getDuration() const
 {
     // TODO: Student implementation
-    return 0;
+    return this->duration;
 }
 
 int Song::getScore() const
 {
     // TODO: Student implementation
-    return 0;
+    return this->score;
 }
 
 string Song::toString() const
 {
     // TODO: Student implementation
-    return "";
+    return this->title + "-" + this->artist;
 }
 
 // =======================
